@@ -5,9 +5,13 @@
 }
 
 header, footer {
+    width: 100%;
     text-align: center;
     background-color: grey;
     color: whitesmoke;
+}
+.inline{
+    display: inline-block;
 }
 footer{
     margin: 10% 0% 0% 2%;
@@ -18,6 +22,7 @@ body{
 nav {
     margin: 2% 0% 0% 2%;
     text-align: center;
+    display: inline-block
 }
 article{
     margin: 10% 2% 2% 2%;
