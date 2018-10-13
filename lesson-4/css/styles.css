@@ -3,6 +3,34 @@
     font-family: 'Open Sans', sans-serif;
     margin: 0; box-sizing: border-box;
 }
-header{
-    display: inline-block;
+
+header, footer {
+    text-align: center;
+    background-color: grey;
+    color: whitesmoke;
+}
+footer{
+    margin: 10% 0% 0% 2%;
+}
+body{
+    margin: 2% 10% 10% 10%;
+}
+nav {
+    margin: 2% 0% 0% 2%;
+    text-align: center;
+}
+article{
+    margin: 10% 2% 2% 2%;
+}
+.boxImageRight{
+    float: right;
+    margin-top:-5%;
+}
+.boxImageLeft{
+    float: left;
+    margin-top:-5%;
+}
+.insideSlider{
+    margin-top:-10%;
+    background-color: #ffffff;
 }
