@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<style>
+* {
+    box-sizing: border-box;
+}
+section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+  	float: left;
+    padding: 15px;  
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+ .col-1 {width: 25%;}
+ .col-2 {width: 50%;}
+
+@media screen and (min-width:601px) and (max-width:768px){
+    .col-1, .col-2 {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Salta </h1>
+</header>
+
+<section>
+
+<div class="col-1 menu">
+  <ul>
+    <li>Flights</li>
+    <li>About the City</li>
+    <li>What to do?</li>
+    <li>What to eat?</li>
+  </ul>
+</div>
+
+<div class="col-2">
+  <h1>The City</h1>
+  <p>Salta is the capital of the Salta Province in Argentina. The city can be divided in two parts, the old town and the modern city.</p>
+</div>
+
+<div class="col-1 right">
+  <aside>
+    <h2>What?</h2>
+    <p>Salta is a city on the province of Salta.</p>
+    <h2>Where?</h2>
+    <p>Salta is a Province in the the Country of Argentina.</p>
+    <h2>How?</h2>
+    <p>You can reach Salta by taking buses and flights from all over Argentina.</p>
+  </aside>
+</div>
+
+</section>
+
+<footer>
+  <p>Example Website</p>
+</footer>
+
+</body>
+</html>
