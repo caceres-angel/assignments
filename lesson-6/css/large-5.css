@@ -41,7 +41,6 @@ nav ul.hide{
 }
 nav ul li {
     float: left;
-    display: inline-block;
     width: 20%;
 }
 nav ul li a {
