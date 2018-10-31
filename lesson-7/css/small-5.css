@@ -120,3 +120,21 @@ article{
 .firstText{
     width: 100%;
 }
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #fff;
+ }
+.box {
+    color: #000000;
+    border-radius: 5px;
+    padding: 20px;
+    }
+ .box img{
+     width: 100%;
+ }
+ .box:hover{
+    width: 100%;
+    box-shadow: 5px 15px 10px 10px #4c2a85;
+}

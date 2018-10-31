@@ -4,58 +4,71 @@
     margin: 0; box-sizing: border-box;
 }
 
-body{
+body {
     margin: 2% 10% 2% 10%;
 }
 header, footer {
-    width: 100%;
-    text-align: center;
     background-color: grey;
     color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+header div h1, h2 {
+    text-align: center;
+}
+
 header img {
-    display: none;
+    width:150px;
 }
+
 footer{
     margin: 2% 0% 2% 0%;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 nav {
-    margin: auto;
-    text-align: center;
-    padding: 15px;
     background-color: #4c2a85;
+    padding: 2%;
 }
 nav ul{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 nav ul.hide{
-    display: none;
+    display: block;
 }
-nav ul li {
-    display: inline-block;
-    width: 20%;
-}
+
 nav ul li a {
-    display:block;
-    padding: 2%;
     color:#ffffff;
-    text-decoration: none;
-    border-top: 1px solid rgb(0,0,0,0.3);
 }
 nav button{
-    margin: 0px;
-    background-color: transparent;
-    border: none;
+    display: none;
 }
+
+#menulist{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuitem {
+    flex-basis: 100px;
+}
+
 article{
     margin: 3% 0% 3% 0%;
 }
 article img{
-    width:200px;  
-    position: relative;
+    width:200px;
 }
 h1{
     text-align: center;
@@ -64,28 +77,14 @@ h1{
     width: 100%;
 }
 .boxImageRight{
-    width: 100%;
-    float: left;
-    position: relative;
+    float: right;
+    margin-top:-105px;
     
 }
 .firstArticle div p{
-    width: 100%;
-    text-align: justify;
-    height: 180px;
-}
-.secondArticle{
-    margin-top: 180px;
-}
-.secondArticle img{
-    display: none;
-}
 
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+    display: inline-block;
+    width:70%;
 }
 .boxImageLeft{
     float: left;
@@ -104,12 +103,6 @@ article{
     margin-left: 2%;
     background-color: #eff1f4 ;
 }
-.inline{
-    display: inline-block;
-    width: 33%;
-    text-align: center;    
-    vertical-align:top;
-}
 .inline2{
     display: inline-block;
     text-align: center;
@@ -120,3 +113,24 @@ article{
 .firstText{
     width: 100%;
 }
+.secondText{
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #fff;
+ }
+.box {
+    width: 1fr;
+    color: #000000;
+    border-radius: 5px;
+    padding: 20px;
+    }
+.box img{
+    width: 100%;
+}
+ .box:hover{
+     box-shadow: 2px 5px 5px 5px #4c2a85;
+ }
