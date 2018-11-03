@@ -13,6 +13,12 @@ header, footer {
     background-color: grey;
     color: whitesmoke;
 }
+.hamburguer{
+    color: #eff1f4;
+}
+.forecast{
+    display: none;
+   }
 header img {
     display: none;
 }
@@ -35,15 +41,14 @@ nav ul.hide{
     display: none;
 }
 nav ul li {
-    display: inline-block;
-    width: 20%;
+    width: 100%;
 }
 nav ul li a {
     display:block;
     padding: 2%;
     color:#ffffff;
     text-decoration: none;
-    border-top: 1px solid rgb(0,0,0,0.3);
+    border-top: 1px solid black;
 }
 nav button{
     margin: 0px;
@@ -137,4 +142,7 @@ article{
  .box:hover{
     width: 100%;
     box-shadow: 5px 15px 10px 10px #4c2a85;
+}
+#map{
+    width:100%;
 }
