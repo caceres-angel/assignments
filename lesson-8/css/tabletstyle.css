@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0; box-sizing: border-box;
+}
+.acmeTable {
+    margin: 0% 10%;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+.acmeTable th {
+    background-color: #628ca6;
+    padding: 0.2rem; 
+    border: 1px solid #ddd;
+}
+.acmeTable thead tr{
+    color: white; 
+    border: 1px solid #ddd;
+}
+.acmeTable thead tr:first-child{
+    color: black;
+    font-size: 1.5rem;
+}
+.acmeTable th:nth-child(0n+2){
+    color: white;
+}
+
+.acmeTable tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+.acmeTable tr {
+    background-color: #e7f0ed;
+    border: 1px solid #ddd;
+}
+.acmeTable tr td {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    border: 1px solid #ddd;
+}
+.acmeTable tr td:hover {
+    background-color: #628ca6;;
+}
+.acmeTable tfoot{
+    font-size: 0.6rem;
+}
+
+
+
