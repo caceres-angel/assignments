@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; box-sizing: border-box;
+}
+body {
+    margin: 2% 10% 2% 10%;
+}
+@media all and (min-width: 801px) {
+    header, footer {
+        background-color: grey;
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header div h1, h2 {
+        text-align: center;
+    }
+    
+    header img {
+        width:150px;
+    }
+    .forecast{
+        width: 100%;
+        text-align:center;
+        background-color:#4c2a85;
+        color:white;
+        padding:10px;
+    }
+    .forecast table{
+        width:100%;
+        padding:10px;
+    }
+    .forecast h3{
+        background-color:#eff1f4;
+        padding:10px;
+        color:black;
+        
+    }
+    footer{
+        margin: 2% 0% 2% 0%;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .clearfix:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    nav {
+        background-color: #4c2a85;
+        padding: 2%;
+    }
+    nav ul{
+        list-style-type: none;
+    }
+    nav ul.hide{
+        display: block;
+    }
+    
+    nav ul li a {
+        color:#ffffff;
+    }
+    nav button{
+        display: none;
+    }
+    
+    #menulist{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .menuitem {
+        flex-basis: 100px;
+    }
+    
+    article{
+        margin: 3% 0% 3% 0%;
+    }
+    article img{
+        width:200px;
+    }
+    h1{
+        text-align: center;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .boxImageRight{
+        float: right;
+        margin-top:-155px;
+        
+    }
+    .firstArticle div p{
+    
+        display: inline-block;
+        width:70%;
+    }
+    .boxImageLeft{
+        float: left;
+        width: 25%;
+    }
+    article{
+        padding:25px;
+        width: 100%;
+        background-color: #eff1f4 ;
+    }
+    .secondArticle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .secondArticle h2{
+        text-align: center;
+    }
+    .insideSlider{
+        position: absolute;
+        padding:15px;
+        margin-top: -25%;
+        margin-bottom: 25%;
+        margin-left: 2%;
+        background-color: #eff1f4 ;
+    }
+    .inline2{
+        display: inline-block;
+        text-align: center;
+    }
+    .weather-summary-option{
+        color: #1c5d99;
+    }
+    .firstText{
+        width: 100%;
+    }
+    .secondText{
+        width: 100%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        background-color: #fff;
+     }
+    .box {
+        width: 100%;
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+    .box img{
+        width: 100%;
+    }
+     .box:hover{
+         box-shadow: 2px 5px 5px 5px #4c2a85;
+     }
+     #map{
+        width:100%;
+    }
+    
+    form fieldset {
+        margin: 2rem 0;
+        border: 1px solid grey;
+        padding: .5rem 2%;
+    }
+    form legend {
+        color: #4c2a85;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    form label.field{
+        display: block;
+        padding-top: 1rem;
+        color: #1c5d99;
+        font-size: 1rem;
+    }
+    form label.field input, form label.field select{
+        display: block;
+        font-size: 1rem;
+        padding: .75rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+    form input.submit {
+        background-color: #1c5d99;
+        color: #ffffff;
+        padding: 15px;
+        width:100%;
+        max-width: 20rem;
+    
+    }
+    form .nte{
+        display: block;
+        margin: 2% 0 2% 0;
+    }
+    form textarea {
+        width: 20rem;
+        height: 10rem;
+        margin: 0 0 2% 0;
+    }
+    form label.field input:required{
+        background-color: lightpink;
+    }
+    form label.field input:required:valid{
+        background-color: lightgreen;
+    }    
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+    header, footer {
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+        color: whitesmoke;
+    }
+    .hamburguer{
+        color: #eff1f4;
+    }
+    .forecast{
+        display: none;
+       }
+    header img {
+        display: none;
+    }
+    footer{
+        margin: 2% 0% 2% 0%;
+        padding: 15px;
+    }
+    nav {
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+        background-color: #4c2a85;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul.hide{
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        display:block;
+        padding: 2%;
+        color:#ffffff;
+        text-decoration: none;
+        border-top: 1px solid black;
+    }
+    nav button{
+        margin: 0px;
+        background-color: transparent;
+        border: none;
+    }
+    article{
+        margin: 3% 0% 3% 0%;
+    }
+    article img{
+        width:200px;  
+        position: relative;
+    }
+    h1{
+        text-align: center;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .boxImageRight{
+        width: 100%;
+        float: left;
+        position: relative;
+        
+    }
+    .firstArticle div p{
+        width: 100%;
+        text-align: justify;
+        height: 180px;
+    }
+    .secondArticle{
+        margin-top: 180px;
+    }
+    .secondArticle img{
+        display: none;
+    }
+    
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .boxImageLeft{
+        float: left;
+        width: 25%;
+    }
+    article{
+        padding:25px;
+        width: 100%;
+        background-color: #eff1f4 ;
+    }
+    .insideSlider{
+        position: absolute;
+        padding:15px;
+        margin-top: -25%;
+        margin-bottom: 25%;
+        margin-left: 2%;
+        background-color: #eff1f4 ;
+    }
+    .inline{
+        display: inline-block;
+        width: 33%;
+        text-align: center;    
+        vertical-align:top;
+    }
+    .inline2{
+        display: inline-block;
+        text-align: center;
+    }
+    .weather-summary-option{
+        color: #1c5d99;
+    }
+    .firstText{
+        width: 100%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        background-color: #fff;
+     }
+    .box {
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+     .box img{
+         width: 100%;
+     }
+     .box:hover{
+        width: 100%;
+    }
+    #map{
+        width:100%;
+    }
+    
+    form fieldset {
+        margin: 2rem 0;
+        border: 1px solid grey;
+        padding: .5rem 2%;
+    }
+    form legend {
+        color: #4c2a85;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    form label.field{
+        display: block;
+        padding-top: 1rem;
+        color: #1c5d99;
+        font-size: 1rem;
+    }
+    form label.field input, form label.field select{
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        padding: .75rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+    form input.submit {
+        background-color: #1c5d99;
+        color: #ffffff;
+        padding: 15px;
+        width:100%;
+        max-width: 20rem;
+    
+    }
+    form .nte{
+        display: block;
+        margin: 2% 0 2% 0;
+    }
+    form textarea {
+        width: 20rem;
+        height: 10rem;
+        margin: 0 0 2% 0;
+    }
+    form label.field input:required{
+        background-color: lightpink;
+    }
+    form label.field input:required:valid{
+        background-color: lightgreen;
+    }
+}
+/*phones*/
+@media all and (max-width: 599px) {
+    header, footer {
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+        color: whitesmoke;
+    }
+    .hamburguer{
+        color: #eff1f4;
+    }
+    .forecast{
+        display: none;
+       }
+    header img {
+        display: none;
+    }
+    footer{
+        margin: 2% 0% 2% 0%;
+        padding: 15px;
+    }
+    nav {
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+        background-color: #4c2a85;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul.hide{
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        display:block;
+        padding: 2%;
+        color:#ffffff;
+        text-decoration: none;
+        border-top: 1px solid black;
+    }
+    nav button{
+        margin: 0px;
+        background-color: transparent;
+        border: none;
+    }
+    article{
+        margin: 3% 0% 3% 0%;
+    }
+    article img{
+        width:200px;  
+        position: relative;
+    }
+    h1{
+        text-align: center;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .boxImageRight{
+        width: 100%;
+        float: left;
+        position: relative;
+        
+    }
+    .firstArticle div p{
+        width: 100%;
+        text-align: justify;
+        height: 180px;
+    }
+    .secondArticle{
+        margin-top: 180px;
+    }
+    .secondArticle img{
+        display: none;
+    }
+    
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .boxImageLeft{
+        float: left;
+        width: 25%;
+    }
+    article{
+        padding:25px;
+        width: 100%;
+        background-color: #eff1f4 ;
+    }
+    .insideSlider{
+        position: absolute;
+        padding:15px;
+        margin-top: -25%;
+        margin-bottom: 25%;
+        margin-left: 2%;
+        background-color: #eff1f4 ;
+    }
+    .inline{
+        display: inline-block;
+        width: 33%;
+        text-align: center;    
+        vertical-align:top;
+    }
+    .inline2{
+        display: inline-block;
+        text-align: center;
+    }
+    .weather-summary-option{
+        color: #1c5d99;
+    }
+    .firstText{
+        width: 100%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: #fff;
+     }
+    .box {
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+     .box img{
+         width: 100%;
+     }
+     .box:hover{
+        width: 100%;
+    }
+    #map{
+        width:100%;
+    }
+    
+    form fieldset {
+        margin: 2rem 0;
+        border: 1px solid grey;
+        padding: .5rem 2%;
+    }
+    form legend {
+        color: #4c2a85;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    form label.field{
+        display: block;
+        padding-top: 1rem;
+        color: #1c5d99;
+        font-size: 1rem;
+    }
+    form label.field input, form label.field select{
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        padding: .75rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+    form input.submit {
+        background-color: #1c5d99;
+        color: #ffffff;
+        padding: 15px;
+        width:100%;
+        max-width: 20rem;
+    
+    }
+    form .nte{
+        display: block;
+        margin: 2% 0 2% 0;
+    }
+    form textarea {
+        width: 20rem;
+        height: 10rem;
+        margin: 0 0 2% 0;
+    }
+    form label.field input:required{
+        background-color: lightpink;
+    }
+    form label.field input:required:valid{
+        background-color: lightgreen;
+    }
+}
+
