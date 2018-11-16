@@ -8,72 +8,6 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <!-- CSS media query on a link element -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
-        <script>
-            
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-            var request = new XMLHttpRequest();
-
-            request.open('GET', requestURL);
-
-            request.responseType = 'json';
-            request.send();
-
-            request.onload = function() {
-                var towns = request.response;
-                populateHeader(towns);
-            }
-
-            function populateHeader(jsonObj) {
-
-                for (var i = 0; i<6; i++) {
-                    
-                    if((jsonObj['towns'][i]['name']=='Preston') || (jsonObj['towns'][i]['name']=='Fish Haven') || (jsonObj['towns'][i]['name']=='Soda Springs')){
-
-                        var myH1 = document.createElement('h1');
-                        myH1.textContent = jsonObj['towns'][i]['name'];
-
-                        var p2 = document.createElement('p');
-                        var p3 = document.createElement('p');
-                        var p4 = document.createElement('p');
-                        var p5 = document.createElement('p');
-                        var p6 = document.createElement('p');
-                        var p7 = document.createElement('p');
-
-                        p2.textContent = 'Motto: '+jsonObj['towns'][i]['motto'];
-                        p3.textContent = 'Year Founded: '+jsonObj['towns'][i]['yearFounded'];
-                        p4.textContent = 'Current Population: '+jsonObj['towns'][i]['currentPopulation'];
-                        p5.textContent = 'Average Rainfall: '+jsonObj['towns'][i]['averageRainfall'];
-
-                        if((jsonObj['towns'][i]['name']=='Preston')){
-                            Preston.appendChild(myH1);
-                            Preston.appendChild(p2);
-                            Preston.appendChild(p3);
-                            Preston.appendChild(p4);
-                            Preston.appendChild(p5);
-                        }
-                        if((jsonObj['towns'][i]['name']=='Fish Haven')){
-                            FishHaven.appendChild(myH1);
-                            FishHaven.appendChild(p2);
-                            FishHaven.appendChild(p3);
-                            FishHaven.appendChild(p4);
-                            FishHaven.appendChild(p5);
-                        }
-                        if((jsonObj['towns'][i]['name']=='Soda Springs')){
-                            SodaSprings.appendChild(myH1);
-                            SodaSprings.appendChild(p2);
-                            SodaSprings.appendChild(p3);
-                            SodaSprings.appendChild(p4);
-                            SodaSprings.appendChild(p5);
-                        }
-                    
-                    }
-               }
-            }
-
-        </script>
-
     </head>
 <body>
 <header>
@@ -91,7 +25,7 @@
         <li class='menuitem'><a href="preston-7.html" class="current">Preston</a></li>
         <li class='menuitem'><a href="#" class="current">Soda Springs</a></li>
         <li class='menuitem'><a href="#" class="current">Fish Haven</a></li>
-        <li class='menuitem'><a href="stormcenter.html" class="current">Storm Center</a></li>
+        <li class='menuitem'><a href="#" class="current">Storm Center</a></li>
         <li class='menuitem'><a href="gallery-7.html" class="current">Gallery</a></li>
     </ul>
 </nav>
@@ -137,21 +71,7 @@
         </tr>
       </tbody>
     </table>
-</section>
-<section>
-    <div class='gridhome'>
-        <div id='Preston' class='boxhome'>
-            <figure><img src="images/preston.jpg" alt="Preston Pic"></figure>
-        </div>
-        <div id='FishHaven' class='boxhome'>
-            <figure><img src="images/fish-haven.jpg" alt="Fish Haven Pic"></figure>
-        </div>
-        <div id='SodaSprings' class='boxhome'>
-            <figure><img src="images/soda-springs.jpg" alt="Soda Springs Pic"></figure>
-        </div>
-    </div>
-</section>
-
+  </section>
 <article class="firstArticle">
     <h2>Article</h2>
     <div><p class='firstText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

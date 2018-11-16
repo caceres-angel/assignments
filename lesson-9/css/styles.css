@@ -158,6 +158,28 @@ body {
      .box:hover{
          box-shadow: 2px 5px 5px 5px #4c2a85;
      }
+
+     /* Grids and boxes from home page*/
+     .gridhome {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        background-color: whitesmoke;
+        text-align: center;
+     }
+    .boxhome {
+        width: 100%;
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+    .boxhome img{
+        width: 100%;
+    }
+     .boxhome img:hover{
+         box-shadow: 2px 5px 5px 5px #4c2a85;
+     }
+
      #map{
         width:100%;
     }
@@ -343,9 +365,24 @@ body {
      .box img{
          width: 100%;
      }
-     .box:hover{
-        width: 100%;
-    }
+
+    /* grids and boxes homepage*/
+
+    .gridhome {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        background-color: whitesmoke;
+     }
+    .boxhome {
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+     .boxhome img{
+         width: 100%;
+     }
+
     #map{
         width:100%;
     }
@@ -535,6 +572,22 @@ body {
      .box:hover{
         width: 100%;
     }
+    /*fromhome */
+    .gridhome {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: whitesmoke;
+     }
+    .boxhome {
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+     .boxhome img{
+         width: 100%;
+     }
+
     #map{
         width:100%;
     }
