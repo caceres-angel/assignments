@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>IGeo Weather Site | HomePage</title>
+        <meta name="description" content="This is an assignment for CIT 230">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!-- CSS media query on a link element -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        <script>
+            
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+            var request = new XMLHttpRequest();
+
+            request.open('GET', requestURL);
+
+            request.responseType = 'json';
+            request.send();
+
+            request.onload = function() {
+                var towns = request.response;
+                populateHeader(towns);
+            }
+
+            function populateHeader(jsonObj) {
+
+                for (var i = 0; i<6; i++) {
+                    
+                    if((jsonObj['towns'][i]['name']=='Preston') || (jsonObj['towns'][i]['name']=='Fish Haven') || (jsonObj['towns'][i]['name']=='Soda Springs')){
+
+                        var myH1 = document.createElement('h1');
+                        myH1.textContent = jsonObj['towns'][i]['name'];
+
+                        var p2 = document.createElement('p');
+                        var p3 = document.createElement('p');
+                        var p4 = document.createElement('p');
+                        var p5 = document.createElement('p');
+                        var p6 = document.createElement('p');
+                        var p7 = document.createElement('p');
+
+                        p2.textContent = 'Motto: '+jsonObj['towns'][i]['motto'];
+                        p3.textContent = 'Year Founded: '+jsonObj['towns'][i]['yearFounded'];
+                        p4.textContent = 'Current Population: '+jsonObj['towns'][i]['currentPopulation'];
+                        p5.textContent = 'Average Rainfall: '+jsonObj['towns'][i]['averageRainfall'];
+
+                        if((jsonObj['towns'][i]['name']=='Preston')){
+                            Preston.appendChild(myH1);
+                            Preston.appendChild(p2);
+                            Preston.appendChild(p3);
+                            Preston.appendChild(p4);
+                            Preston.appendChild(p5);
+                        }
+                        if((jsonObj['towns'][i]['name']=='Fish Haven')){
+                            FishHaven.appendChild(myH1);
+                            FishHaven.appendChild(p2);
+                            FishHaven.appendChild(p3);
+                            FishHaven.appendChild(p4);
+                            FishHaven.appendChild(p5);
+                        }
+                        if((jsonObj['towns'][i]['name']=='Soda Springs')){
+                            SodaSprings.appendChild(myH1);
+                            SodaSprings.appendChild(p2);
+                            SodaSprings.appendChild(p3);
+                            SodaSprings.appendChild(p4);
+                            SodaSprings.appendChild(p5);
+                        }
+                    
+                    }
+               }
+            }
+
+        </script>
+
+    </head>
+<body>
+<header>
+    <div><img src='images/191719709Untitled-3-512.png' alt="header image"></div>
+    <div>
+        <h1>iGeo Weather</h1>
+        <h3>Whether here or there, we're with you.</h3>
+    </div>
+    <div><img src='images/weather-512.png' alt="second image"></div>
+</header>
+<nav class="clearfix">
+    <button onclick="toogleMenu()" class='hamburguer'>&#9776;</button>
+    <ul id="menulist" class="hide">
+        <li class='menuitem current'><a href="index.html">Home</a></li>
+        <li class='menuitem'><a href="preston.html" >Preston</a></li>
+        <li class='menuitem'><a href="soda-springs.html">Soda Springs</a></li>
+        <li class='menuitem'><a href="fish-haven.html" >Fish Haven</a></li>
+        <li class='menuitem'><a href="stormcenter.html">Storm Center</a></li>
+        <li class='menuitem'><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Welcome to IGeo Weather Site</h1>
+    <picture class="slider">
+            <img srcset="images/hero-slider-small.jpg 480w, images/hero-slider-large.jpg 801w" sizes="(max-width: 800px) 280px,
+            (min-width: 801px) 440px, 800px" src="images/hero-slider-largel.jpg" alt="main slider">
+    </picture>
+</main>
+<article class="firstArticle">
+    <h2>What you will find here</h2>
+    <div><p class='firstText'>In this website you will be able to check for the climatic status of the towns of <strong>Preston</strong>, <strong>Soda Springs</strong> and <strong>Fish Haven</strong> towns.</p>
+        <p>This way you can be prepared to know if you should bring your wind jacket or your flipflops</p></div>
+    <div class=" boxImageRight" ><img src="images/summer-512.png" alt="section image"  /></div>
+</article>
+
+<article>
+    <h3>Towns Information</h3>
+    <div class='gridhome'>
+        <div id='Preston' class='boxhome'>
+            <figure><img src="images/preston.jpg" alt="Preston Pic"></figure>
+        </div>
+        <div id='FishHaven' class='boxhome'>
+            <figure><img src="images/fish-haven.jpg" alt="Fish Haven Pic"></figure>
+        </div>
+        <div id='SodaSprings' class='boxhome'>
+            <figure><img src="images/soda-springs.jpg" alt="Soda Springs Pic"></figure>
+        </div>
+    </div>
+</article>
+    
+<article>
+<h2>Map</h2>
+    <div class="secondArticle">
+        <div><img src='images/191719709Untitled-3-512.png' alt="another image"  ></div>
+        <div>
+            <h4>iGeo Weather</h4>
+            <h5>Idaho County</h5>
+            <h5>Contact: +543874685059</h5>
+            <h5>Email: angel@cit230.byui.edu</h5>
+        </div>
+        <div><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7512.042845891137!2d-111.88253835128918!3d42.09676908117736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+Idaho+83263%2C+EE.+UU.!5e1!3m2!1ses-419!2sar!4v1541271450800" allowfullscreen></iframe></div>
+    </div>
+</article>
+
+<footer>
+    <div id="showdate"></div>
+    <div><small>Copyright &copy; 2018</small></div>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+</body>
+</html>

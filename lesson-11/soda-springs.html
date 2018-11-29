@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Soda Springs | IGeo Weather Site</title>
+        <meta name="description" content="This is an assignment for CIT 230">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!-- CSS media query on a link element -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+<body>
+<header>
+    <div><img src='images/191719709Untitled-3-512.png' alt="header image"></div>
+    <div>
+        <h1>iGeo Weather</h1>
+        <h3>Whether here or there, we're with you.</h3>
+    </div>
+    <div><img src='images/weather-512.png' alt="second image"></div>
+</header>
+<nav class="clearfix">
+    <button onclick="toogleMenu()" class='hamburguer'>&#9776;</button>
+    <ul id="menulist" class="hide">
+        <li class='menuitem'><a href="index.html">Home</a></li>
+        <li class='menuitem'><a href="preston.html">Preston</a></li>
+        <li class='menuitem current'><a href="soda-springs.html">Soda Springs</a></li>
+        <li class='menuitem'><a href="fish-haven.html">Fish Haven</a></li>
+        <li class='menuitem'><a href="stormcenter.html">Storm Center</a></li>
+        <li class='menuitem'><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>The Town of Soda Springs</h1>
+    <picture class="slider">
+            <img srcset="images/hero-slider-small-soda-springs.jpg 480w, images/hero-slider-large-soda-springs.jpg 801w" sizes="(max-width: 800px) 280px,
+            (min-width: 801px) 440px, 800px" src="images/hero-slider-large-soda-springs.jpg" alt="main slider">
+    </picture>
+    <div class="insideSlider">
+        <h2>Weather Summary</h2>
+        <ul>
+            <li>Currently: <span class='weather-summary-option' id="prestonMain"></span></li>
+            <li>Temperature: <span class='weather-summary-option' id="prestonTemp"></span>ºC</li>
+            <li>Humidity: <span class='weather-summary-option' id="prestonHum"></span></li>
+            <li>Wind Speed: <span class='weather-summary-option' id="prestonWS"></span></li>
+            <li>Wind Direction: <span class='weather-summary-option' id="prestonWD"></span></li>
+            <li>Wind Chill: <span class='weather-summary-option' id='prestonWC'></span></li>
+        </ul>
+    </div>
+</main>
+<section class="forecast">
+    <h3>High Temperature Forecast</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Tomorrow</th>
+          <th>+2 Days</th>
+          <th>+3 Days</th>
+          <th>+4 Days</th>
+          <th>+5 Days</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Forecast</th>
+          <td><span id="day1"></span>ºC</td>
+          <td><span id="day2"></span>ºC</td>
+          <td><span id="day3"></span>ºC</td>
+          <td><span id="day4"></span>ºC</td>
+          <td><span id="day5"></span>ºC</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+<article class="firstArticle">
+    <h2>Interesting Data</h2>
+    <div><p class='firstText'>
+        The city is named for the hundreds of natural springs of carbonated water that are located in and around the city.[6] The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th century. Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing attraction.
+    </p></div>
+    <div class=" boxImageRight" ><img src="images/summer-512.png" alt="section image"  /></div>
+</article>
+    
+<article>
+<h2>Map</h2>
+    <div class="secondArticle">
+        <div><img src='images/191719709Untitled-3-512.png' alt="another image"  ></div>
+        <div>
+            <h4>iGeo Weather</h4>
+            <h5>Soda Springs Idaho</h5>
+            <h5>Contact: +543874685059</h5>
+            <h5>Email: angel@cit230.byui.edu</h5>
+        </div>
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.912989751494!2d-111.62379170521913!3d42.66147063542168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+Idaho+83276%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1543504725039" allowfullscreen></iframe></div>
+    </div>
+</article>
+
+<footer>
+    <div id="showdate"></div>
+    <small><i>Source: openweathermap.org</i></small>
+    <small><i><a href="http://www.byui.edu">Bringham Young University Idaho</a></small>
+    <div><small>Copyright &copy; 2018</small></div>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/weather-soda-springs.js"></script>
+<script src="scripts/weather-soda-springs-5-days.js"></script>
+</body>
+</html>

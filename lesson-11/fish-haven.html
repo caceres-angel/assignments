@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Fish Haven | IGeo Weather Site</title>
+        <meta name="description" content="This is an assignment for CIT 230">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!-- CSS media query on a link element -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+<body>
+<header>
+    <div><img src='images/191719709Untitled-3-512.png' alt="header image"></div>
+    <div>
+        <h1>iGeo Weather</h1>
+        <h3>Whether here or there, we're with you.</h3>
+    </div>
+    <div><img src='images/weather-512.png' alt="second image"></div>
+</header>
+<nav class="clearfix">
+    <button onclick="toogleMenu()" class='hamburguer'>&#9776;</button>
+    <ul id="menulist" class="hide">
+        <li class='menuitem'><a href="index.html">Home</a></li>
+        <li class='menuitem'><a href="preston.html">Preston</a></li>
+        <li class='menuitem'><a href="soda-springs.html">Soda Springs</a></li>
+        <li class='menuitem current'><a href="fish-haven.html" >Fish Haven</a></li>
+        <li class='menuitem'><a href="stormcenter.html">Storm Center</a></li>
+        <li class='menuitem'><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>The Town of Fish Haven</h1>
+    <picture class="slider">
+            <img srcset="images/hero-slider-small-fish-haven.jpg 480w, images/hero-slider-large-fish-haven.jpg 801w" sizes="(max-width: 800px) 280px,
+            (min-width: 801px) 440px, 800px" src="images/hero-slider-large-fish-haven.jpg" alt="main slider">
+    </picture>
+    <div class="insideSlider">
+        <h2>Weather Summary</h2>
+        <ul>
+            <li>Currently: <span class='weather-summary-option' id="prestonMain"></span></li>
+            <li>Temperature: <span class='weather-summary-option' id="prestonTemp"></span>ºC</li>
+            <li>Humidity: <span class='weather-summary-option' id="prestonHum"></span></li>
+            <li>Wind Speed: <span class='weather-summary-option' id="prestonWS"></span></li>
+            <li>Wind Direction: <span class='weather-summary-option' id="prestonWD"></span></li>
+            <li>Wind Chill: <span class='weather-summary-option' id='prestonWC'></span></li>
+        </ul>
+    </div>
+</main>
+<section class="forecast">
+    <h3>High Temperature Forecast</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Tomorrow</th>
+          <th>+2 Days</th>
+          <th>+3 Days</th>
+          <th>+4 Days</th>
+          <th>+5 Days</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Forecast</th>
+          <td><span id="day1"></span>ºC</td>
+          <td><span id="day2"></span>ºC</td>
+          <td><span id="day3"></span>ºC</td>
+          <td><span id="day4"></span>ºC</td>
+          <td><span id="day5"></span>ºC</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+<article class="firstArticle">
+    <h2>Interesting Data</h2>
+    <div><p class='firstText'>
+        The first settlement at Fish Haven was made in 1864. A post office called Fish Haven was established in 1867, and remained in operation until 1962. The community was so named because nearby Bear Lake is a favorite fishing spot.
+    </p></div>
+    <div class=" boxImageRight" ><img src="images/summer-512.png" alt="section image"  /></div>
+</article>
+    
+<article>
+<h2>Map</h2>
+    <div class="secondArticle">
+        <div><img src='images/191719709Untitled-3-512.png' alt="another image"  ></div>
+        <div>
+            <h4>iGeo Weather</h4>
+            <h5>Fish Haven Idaho</h5>
+            <h5>Contact: +543874685059</h5>
+            <h5>Email: angel@cit230.byui.edu</h5>
+        </div>
+        <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.955858018711!2d-111.40486807656738!3d42.03805585405634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+Idaho+83287%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1543504607315" allowfullscreen></iframe></div>
+    </div>
+</article>
+
+<footer>
+    <div id="showdate"></div>
+    <small><i>Source: openweathermap.org</i></small>
+    <small><i><a href="http://www.byui.edu">Bringham Young University Idaho</a></small>
+    <div><small>Copyright &copy; 2018</small></div>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/weather-fish-haven.js"></script>
+<script src="scripts/weather-fish-haven-5-days.js"></script>
+</body>
+</html>
