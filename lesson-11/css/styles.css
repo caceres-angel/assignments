@@ -4,10 +4,15 @@
     margin: 0; box-sizing: border-box;
 }
 body {
-    margin: 2% 10% 2% 10%;
+    margin: 2% 7% 2% 7%;
 }
 .current{
-    font-weight: bold;
+    background-color:grey;
+    border:2px solid;
+    border-radius:10px;
+    padding:5px;
+    width: 100%;
+
 }
 @media all and (min-width: 801px) {
     header, footer {
@@ -57,6 +62,7 @@ body {
     nav {
         background-color: #4c2a85;
         padding: 2%;
+        justify-content: space-around;
     }
     nav ul{
         list-style-type: none;
@@ -64,9 +70,11 @@ body {
     nav ul.hide{
         display: block;
     }
-    
     nav ul li a {
         color:#ffffff;
+    }
+    nav ul li {
+        text-align: center;
     }
     nav button{
         display: none;
