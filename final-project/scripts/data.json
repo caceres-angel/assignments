@@ -1,0 +1,152 @@
+{
+    "temples" : [
+    {
+        "name": "Fresno",
+        "address": "6290 N Valentine Ave, Fresno CA 93711, United States",
+        "telephone": "(1) 559-437-9451",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "No distribution center nearby"
+        ],
+        "history":[
+            "January 8, 1999: Announced",
+            "March 20, 1999: Groundbreaking",
+            "April 9, 2000: Dedicated"
+        ],
+        "ordinances": [
+            "Baptism: Tuesday to Friday 06.30 PM - 08.30 PM",
+            "Initiatory: Please call the temple for initiatory information",
+            "Endowment: 7:30 AM, 9:00 AM, 10:30 AM, 4:30 PM, 6:00 PM, 7:30 PM",
+            "Sealing: Please call the temple for initiatory information"
+        ],
+        "sessions": "Please call the Temple to check for available sessions schedule",
+        "closures": [
+            "Tuesday, January 1, 2019",
+            "Monday, April 1, 2019 - Monday, April 15, 2019",
+            "Thursday, July 4, 2019",
+            "Monday, September 30, 2019 - Monday, October 14, 2019",
+            "Wednesday, November 27, 2019 - Thursday, November 28, 2019",
+            "Tuesday, December 24, 2019",
+            "Wednesday, December 25, 2019",
+            "Tuesday, December 31, 2019"
+        ]
+    },
+    {
+        "name": "Laie",
+        "address": "55-600 Naniloa Loop, Laie HI 96762-2202, United States",
+        "telephone": "(1) 808-293-2427",
+        "services": [
+            "Clothing rental available",
+            "Cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history":[
+            "October 3, 1915: Announced",
+            "February 8, 1916: Groundbreaking",
+            "November 27, 1919: Dedicated — dedicatory prayer",
+            "June 13, 1978: Rededicated — dedicatory prayer",
+            "November 21, 2010: Rededicated — dedicatory prayer"
+        ],
+        "ordinances": [
+            "Baptism: 2:00 PM - 4:00 PM No Appointment Needed",
+            "Initiatory: For initiatory information and schedule, please call the temple.",
+            "Endowment: 4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM",
+            "Sealing: For sealing information and schedule, please call the temple."
+        ],
+        "sessions": "Please call the temple to check for available sessions schedule",
+        "closures": [
+            "Friday, April 5, 2019 (Limited Hours)",
+            "Saturday, April 6, 2019",
+            "Friday, June 28, 2019 (Limited Hours)",
+            "Saturday, June 29, 2019 (Limited Hours)",
+            "Monday, July 1, 2019 - Monday, July 15, 2019",
+            "Friday, October 4, 2019 (Limited Hours)",
+            "Saturday, October 5, 2019",
+            "Wednesday, November 27, 2019 (Limited Hours)",
+            "Thursday, November 28, 2019",
+            "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+            "Friday, December 27, 2019 (Limited Hours)",
+            "Saturday, December 28, 2019 (Limited Hours)",
+            "Monday, December 30, 2019 - Monday, January 13, 2020"
+        ]
+
+    },
+    {
+        "name": "Anchorage",
+        "address": "13161 Brayton Dr, Anchorage AK 99516, United States",
+        "telephone": "(1) 907-348-7890",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "No distribution center nearby"
+        ],
+        "history":[
+            "October 4, 1997: Announced",
+            "April 17, 1998: Groundbreaking",
+            "January 9, 1999: Dedicated — dedicatory prayer",
+            "February 8, 2004: Rededicated — dedicatory prayer"
+        ],
+        "ordinances": [
+            "Baptism: 7:00 PM - 9:00 PM Church Groups - Appointment Required",
+            "Initiatory: For initiatory information and schedule, please call the temple.",
+            "Endowment: 7:00 PM",
+            "Sealing: For sealing information and schedule, please call the temple."
+        ],
+        "sessions": "Please call the temple to check for available sessions schedule",
+        "closures": [
+            "Tuesday, January 1, 2019",
+            "Monday, March 25, 2019 - Monday, April 8, 2019",
+            "Thursday, July 4, 2019",
+            "Monday, September 23, 2019 - Monday, October 7, 2019",
+            "Wednesday, November 27, 2019 - Thursday, November 28, 2019",
+            "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+            "Tuesday, December 31, 2019"
+        ]
+
+    },
+    {
+        "name": "Bern",
+        "address": "Tempelstrasse 2, CH-3052 Zollikofen, Switzerland",
+        "telephone": "(41) 31-915-5252",
+        "services": [
+            "Clothing rental available",
+            "No Cafeteria available",
+            "Patron housing available",
+            "Distribution center nearby"
+        ],
+        "history":[
+            "July 1, 1952: Announced",
+            "August 5, 1953: Groundbreaking",
+            "September 11, 1955: Dedicated — dedicatory prayer",
+            "October 23, 1992: Rededicated — dedicatory prayer"
+        ],
+        "ordinances": [
+            "Baptism: 8:00 AM - 4:30 PM Appointment Required",
+            "Initiatory: For initiatory information and schedule, please call the temple.",
+            "Endowment: 3:30 PM",
+            "Sealing: For sealing information and schedule, please call the temple."
+        ],
+        "sessions": "Please call the temple to check for available sessions schedule",
+        "closures": [
+            "Friday, April 5, 2019 (Limited Hours)",
+            "Saturday, April 6, 2019",
+            "Friday, June 28, 2019 (Limited Hours)",
+            "Saturday, June 29, 2019 (Limited Hours)",
+            "Monday, July 1, 2019 - Monday, July 15, 2019",
+            "Friday, October 4, 2019 (Limited Hours)",
+            "Saturday, October 5, 2019",
+            "Wednesday, November 27, 2019 (Limited Hours)",
+            "Thursday, November 28, 2019",
+            "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+            "Friday, December 27, 2019 (Limited Hours)",
+            "Saturday, December 28, 2019 (Limited Hours)",
+            "Monday, December 30, 2019 - Monday, January 13, 2020"
+        ]
+
+    }   
+    ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites Home Page</title>
+        <meta name="description" content=""> <!-- INcluir description -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <!-- CSS media query on a link element -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script>
+                var requestURL = "C:/Users/tonyc/OneDrive/Documentos/development/assignments/final-project/scripts/data.json";
+        
+                var request = new XMLHttpRequest();
+        
+                request.open('GET', requestURL); 
+        
+                request.responseType = 'json';
+                request.send();
+        
+                request.onload = function() {
+                    var temples = request.response;
+                    populateHeader(temples);
+                    showHeroes(temples);
+                }
+        
+                function showHeroes(jsonObj) {
+                    var heroes = jsonObj['name'];
+                        
+                    for (var i = 0; i < heroes.length; i++) {
+                        var myArticle = document.createElement('article');
+                        var myH2 = document.createElement('h2');
+                        var myPara1 = document.createElement('p');
+                        var myPara2 = document.createElement('p');
+                        var myPara3 = document.createElement('p');
+                        var myList = document.createElement('ul');
+        
+                        myH2.textContent = heroes[i].name;
+                        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+                        myPara2.textContent = 'Age: ' + heroes[i].age;
+                        myPara3.textContent = 'Superpowers:';
+                            
+                        var superPowers = heroes[i].powers;
+                            for (var j = 0; j < superPowers.length; j++) {
+                            var listItem = document.createElement('li');
+                            listItem.textContent = superPowers[j];
+                            myList.appendChild(listItem);
+                        }
+        
+                        myArticle.appendChild(myH2);
+                        myArticle.appendChild(myPara1);
+                        myArticle.appendChild(myPara2);
+                        myArticle.appendChild(myPara3);
+                        myArticle.appendChild(myList);
+        
+                        section.appendChild(myArticle);
+                    }
+                }
+        
+            </script>
+    </head>
+<body>
+<header>
+    <div class="logo"><img src="images/logo.png"></div>
+    <nav class="clearfix">
+        <button onclick="toogleMenu()" class='hamburguer'>&#9776;</button>
+        <ul id="menulist" class="hide">
+            <li class='menuitem'><a href="index.html">Home</a></li>
+            <li class='menuitem current'><a href="about-us.html" >About Us</a></li>
+            <li class='menuitem'><a href="temples-and-acomodations.html">Temples & Hotels</a></li>
+            <li class='menuitem'><a href="gallery.html" >Gallery</a></li>
+            <li class='menuitem'><a href="booking.html">Booking</a></li>
+            <li class='menuitem'><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+</main>
+<article>
+    <h2>Fresno - California</h2>
+    <address id="FCAddress"></address>
+    <email></email>
+    <span id="FCServices"></span>
+    <span id="FCHistory"></span>
+    <span id="FCOrdinances"></span>
+    <span id="FCSessions"></span>
+    <span id="FCClosures"></span>
+    <span id="FCWeather"></span>
+</article>
+<article>
+    <h2>Laie - Hawaii</h2>
+    <address id="LHAddress"></address>
+    <email></email>
+    <span id="LHServices"></span>
+    <span id="LHHistory"></span>
+    <span id="LHOrdinances"></span>
+    <span id="LHSessions"></span>
+    <span id="LHClosures"></span>
+    <span id="LHWeather"></span>
+</article>
+
+<article>
+    <h2>Anchorage - Alaska</h2>
+    <address id="AAAddress"></address>
+    <email></email>
+    <span id="AAServices"></span>
+    <span id="AAHistory"></span>
+    <span id="AAOrdinances"></span>
+    <span id="AASessions"></span>
+    <span id="AAClosures"></span>
+    <span id="AAWeather"></span>
+</article>
+
+<article>
+    <h2>Bern - Switzerland</h2>
+    <p></p>
+</article>
+   
+
+<footer>
+    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.8445639356505!2d-77.09719929374494!3d38.97840791617452!2m3!1f355.2187500000002!2f37.31635911955864!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+EE.+UU.!5e1!3m2!1ses-419!2sar!4v1544544081201" allowfullscreen></iframe></div>
+    <div>
+        <p><b>Temple Inn & Suites</b></p>
+        <p>Maryland, USA</p>
+        <p>Contact: +543874685059</p>
+        <p>Email: info@templeinnandsuites.com</p>
+    </div>        
+    <div>
+        <p>Copyright 2018. Designed by Angel Caceres. Student @ <a href="http://www.byui.edu" target="_blank">Bringham Young Unversity Idaho.</a></p>
+    </div>
+</footer>
+
+<script src="scripts/hamburger.js"></script>
+</body>
+</html>

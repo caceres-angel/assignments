@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0; box-sizing: border-box;
+}
+
+@media all and (min-width: 801px) {
+    .insideSlider{
+        position: absolute;
+        padding:15px;
+        margin-top: -25%;
+        margin-bottom: 25%;
+        margin-left: 2%;
+        background-color: #eff1f4 ;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+    
+}
+/*phones*/
+@media all and (max-width: 599px) {
+    body {
+        margin: 1% 1% 1% 1%;
+    }
+    header, footer {
+        width: 100%;
+        text-align: center;
+        background-color: #F2F2D9;
+        color: whitesmoke;
+    }
+    .hamburguer{
+        color: #eff1f4;
+    }
+    .forecast{
+        display: none;
+       }
+    footer{
+        background-color: #ec924a;
+        margin: 2% 0% 2% 0%;
+        padding: 15px;
+    }
+    nav {
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+        background-color: #325B61;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul.hide{
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        display:block;
+        padding: 2%;
+        color:#ffffff;
+        text-decoration: none;
+        border-top: 1px solid black;
+    }
+    nav button{
+        margin: 0px;
+        background-color: transparent;
+        border: none;
+    }
+    article{
+        margin: 3% 0% 3% 0%;
+    }
+    
+    h2{
+        padding: 3%;
+        text-align: center;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .logo img {
+        width: 80%;
+        padding: 1rem;
+    }
+    .firstArticle div p{
+        width: 100%;
+        text-align: justify;
+        height: 180px;
+    }
+    .secondArticle img {
+        display: none;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .boxImageLeft{
+        float: left;
+        width: 25%;
+    }
+    article{
+        padding:25px;
+        width: 100%;
+        background-color: #F2F2D9 ;
+    }
+    .inline{
+        display: inline-block;
+        width: 33%;
+        text-align: center;    
+        vertical-align:top;
+    }
+    .inline2{
+        display: inline-block;
+        text-align: center;
+    }
+    .weather-summary-option{
+        color: #1c5d99;
+    }
+    .firstText{
+        width: 100%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: #fff;
+     }
+    .box {
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+     .box img{
+         width: 100%;
+     }
+     .box:hover{
+        width: 100%;
+    }
+    /*fromhome */
+    .gridhome {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: whitesmoke;
+     }
+    .boxhome {
+        color: #000000;
+        border-radius: 5px;
+        padding: 20px;
+        }
+     .boxhome img{
+         width: 100%;
+     }
+
+    #map{
+        width:100%;
+    }
+    form fieldset {
+        background-color: #ec924a;
+        margin: 2rem 0;
+        padding: .5rem 2%;
+    }
+    form legend {
+        color: gray;
+        margin: 0 1rem;
+        background-color:#F2F2D9;
+        padding:10px;
+    }
+    form label.field{
+        display: block;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1rem;
+    }
+    form label.field input, form label.field select{
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        padding: .75rem;
+        width: 100%;
+    }
+    form input.submit {
+        background-color: #415A56;
+        color: #ffffff;
+        padding: 15px;
+        width:100%;
+    
+    }
+    form .nte{
+        display: block;
+        margin: 2% 0 2% 0;
+    }
+    form textarea {
+        width: 100%;
+        height: 10rem;
+        margin: 0 0 2% 0;
+    }
+    form label.field input:required{
+        background-color: lightpink;
+    }
+    form label.field input:required:valid{
+        background-color: lightgreen;
+    }
+}
+
