@@ -9,55 +9,65 @@
         <!-- CSS media query on a link element -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <script>
-                var requestURL = "https://caceres-angel.github.io/assignments/final-project/scripts/data.json";
-        
-                var request = new XMLHttpRequest();
-        
-                request.open('GET', requestURL); 
-        
-                request.responseType = 'json';
-                request.send();
-        
-                request.onload = function() {
-                    var temples = request.response;
-                    populateHeader(temples);
-                    showHeroes(temples);
-                }
-        
-                function showHeroes(jsonObj) {
-                    var heroes = jsonObj['name'];
-                        
-                    for (var i = 0; i < heroes.length; i++) {
-                        var myArticle = document.createElement('article');
-                        var myH2 = document.createElement('h2');
-                        var myPara1 = document.createElement('p');
-                        var myPara2 = document.createElement('p');
-                        var myPara3 = document.createElement('p');
-                        var myList = document.createElement('ul');
-        
-                        myH2.textContent = heroes[i].name;
-                        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-                        myPara2.textContent = 'Age: ' + heroes[i].age;
-                        myPara3.textContent = 'Superpowers:';
-                            
-                        var superPowers = heroes[i].powers;
-                            for (var j = 0; j < superPowers.length; j++) {
-                            var listItem = document.createElement('li');
-                            listItem.textContent = superPowers[j];
-                            myList.appendChild(listItem);
-                        }
-        
-                        myArticle.appendChild(myH2);
-                        myArticle.appendChild(myPara1);
-                        myArticle.appendChild(myPara2);
-                        myArticle.appendChild(myPara3);
-                        myArticle.appendChild(myList);
-        
-                        section.appendChild(myArticle);
+            
+            var apiURL = 'https://caceres-angel.github.io/assignments/final-project/scripts/data.json';
+
+            var templeRequest = new XMLHttpRequest();
+
+            templeRequest.open('GET', apiURL, true);
+
+            templeRequest.send();
+
+            templeRequest.onload =  function () {
+
+                var templeData = JSON.parse(templeRequest.responseText);
+
+                console.log(templeData);
+
+                for (var i = 0; i < templeData.temples.length; i++) {
+
+                    document.getElementById("Name"+i).innerHTML = templeData.temples[i].name;
+                    document.getElementById("Address"+i).innerHTML = templeData.temples[i].address;
+                    document.getElementById("Telephone"+i).innerHTML = templeData.temples[i].telephone;
+
+                    var templeServices = templeData.temples[i].services;
+                        for (var j = 0; j < templeServices.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = templeServices[j];
+                        document.getElementById("Services"+i).appendChild(listItem);
+                        //myList.appendChild(listItem);
                     }
+
+                    var templeHistory = templeData.temples[i].history;
+                        for (var j = 0; j < templeHistory.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = templeHistory[j];
+                        document.getElementById("History"+i).appendChild(listItem);
+                        //myList.appendChild(listItem);
+                    }
+
+                    var templeOrdinances = templeData.temples[i].history;
+                        for (var j = 0; j < templeOrdinances.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = templeOrdinances[j];
+                        document.getElementById("Ordinances"+i).appendChild(listItem);
+                        //myList.appendChild(listItem);
+                    }
+
+                    
+                    var templeClosures = templeData.temples[i].history;
+                        for (var j = 0; j < templeClosures.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = templeClosures[j];
+                        document.getElementById("Closures"+i).appendChild(listItem);
+                        //myList.appendChild(listItem);
+                    }
+                    document.getElementById("Sessions"+i).innerHTML = templeData.temples[i].sessions;
                 }
-        
+
+            }
             </script>
+    
     </head>
 <body>
 <header>
@@ -79,45 +89,73 @@
 
 </main>
 <article>
-    <h2>Fresno - California</h2>
-    <address id="FCAddress"></address>
-    <email></email>
-    <span id="FCServices"></span>
-    <span id="FCHistory"></span>
-    <span id="FCOrdinances"></span>
-    <span id="FCSessions"></span>
-    <span id="FCClosures"></span>
-    <span id="FCWeather"></span>
-</article>
-<article>
-    <h2>Laie - Hawaii</h2>
-    <address id="LHAddress"></address>
-    <email></email>
-    <span id="LHServices"></span>
-    <span id="LHHistory"></span>
-    <span id="LHOrdinances"></span>
-    <span id="LHSessions"></span>
-    <span id="LHClosures"></span>
-    <span id="LHWeather"></span>
+    <h2 id="Name0">Fresno - California</h2>
+    <p>Address: <span id="Address0"></span></p>
+    <p>Telephone: <span id="Telephone0"></span></p>
+    <p>Email <email>Click Here</email></p>
+    <p>Services: 
+    <span>
+        <ul id="Services0"></ul>
+    </span>
+    </p>
+    <p>History: <ul id="History0"></ul></p>
+    <p>Ordinances: <ul id="Ordinances0"></ul></p>
+    <p>Sessions: <span id="Sessions0"></span></p>
+    <p>Closures: <ul id="Closures0"></ul></p>
+    <p>Current Weather: <span id="Weather0"></span></p>
 </article>
 
 <article>
-    <h2>Anchorage - Alaska</h2>
-    <address id="AAAddress"></address>
-    <email></email>
-    <span id="AAServices"></span>
-    <span id="AAHistory"></span>
-    <span id="AAOrdinances"></span>
-    <span id="AASessions"></span>
-    <span id="AAClosures"></span>
-    <span id="AAWeather"></span>
+    <h2 id="Name1">Fresno - California</h2>
+    <p>Address: <span id="Address1"></span></p>
+    <p>Telephone: <span id="Telephone1"></span></p>
+    <p>Email <email>Click Here</email></p>
+    <p>Services: 
+    <span>
+        <ul id="Services1"></ul>
+    </span>
+    </p>
+    <p>History: <ul id="History1"></ul></p>
+    <p>Ordinances: <ul id="Ordinances1"></ul></p>
+    <p>Sessions: <span id="Sessions1"></span></p>
+    <p>Closures: <ul id="Closures1"></ul></p>
+    <p>Current Weather: <span id="Weather1"></span></p>
 </article>
 
 <article>
-    <h2>Bern - Switzerland</h2>
-    <p></p>
+    <h2 id="Name2">Fresno - California</h2>
+    <p>Address: <span id="Address2"></span></p>
+    <p>Telephone: <span id="Telephone2"></span></p>
+    <p>Email <email>Click Here</email></p>
+    <p>Services: 
+    <span>
+        <ul id="Services2"></ul>
+    </span>
+    </p>
+    <p>History: <ul id="History2"></ul></p>
+    <p>Ordinances: <ul id="Ordinances2"></ul></p>
+    <p>Sessions: <span id="Sessions2"></span></p>
+    <p>Closures: <ul id="Closures2"></ul></p>
+    <p>Current Weather: <span id="Weather2"></span></p>
 </article>
-   
+
+<article>
+    <h2 id="Name3">Fresno - California</h2>
+    <p>Address: <span id="Address3"></span></p>
+    <p>Telephone: <span id="Telephone3"></span></p>
+    <p>Email <email>Click Here</email></p>
+    <p>Services: 
+    <span>
+        <ul id="Services3"></ul>
+    </span>
+    </p>
+    <p>History: <ul id="History3"></ul></p>
+    <p>Ordinances: <ul id="Ordinances3"></ul></p>
+    <p>Sessions: <span id="Sessions3"></span></p>
+    <p>Closures: <ul id="Closures3"></ul></p>
+    <p>Current Weather: <span id="Weather3"></span></p>
+</article>
+            
 
 <footer>
     <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.8445639356505!2d-77.09719929374494!3d38.97840791617452!2m3!1f355.2187500000002!2f37.31635911955864!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+EE.+UU.!5e1!3m2!1ses-419!2sar!4v1544544081201" allowfullscreen></iframe></div>

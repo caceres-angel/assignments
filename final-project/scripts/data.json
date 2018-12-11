@@ -1,7 +1,7 @@
 {
     "temples" : [
     {
-        "name": "Fresno",
+        "name": "Fresno - California",
         "address": "6290 N Valentine Ave, Fresno CA 93711, United States",
         "telephone": "(1) 559-437-9451",
         "services": [
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "name": "Laie",
+        "name": "Laie - Hawai ",
         "address": "55-600 Naniloa Loop, Laie HI 96762-2202, United States",
         "telephone": "(1) 808-293-2427",
         "services": [
@@ -75,7 +75,7 @@
 
     },
     {
-        "name": "Anchorage",
+        "name": "Anchorage - Alaska",
         "address": "13161 Brayton Dr, Anchorage AK 99516, United States",
         "telephone": "(1) 907-348-7890",
         "services": [
@@ -109,7 +109,7 @@
 
     },
     {
-        "name": "Bern",
+        "name": "Bern - Switzserland",
         "address": "Tempelstrasse 2, CH-3052 Zollikofen, Switzerland",
         "telephone": "(41) 31-915-5252",
         "services": [
