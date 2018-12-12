@@ -1,6 +1,6 @@
    
 
-    var apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=20237cefe6297c195f37cf7adef74932&units=metric';
+    var apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3682330&appid=20237cefe6297c195f37cf7adef74932&units=metric';
 
     var weatherRequest = new XMLHttpRequest();
 
@@ -14,12 +14,7 @@
 
         console.log(weatherData);
 
-        document.getElementById("prestonMain").innerHTML = weatherData.weather[0].description;
-        document.getElementById("prestonTemp").innerHTML = weatherData.main.temp;
-        document.getElementById("prestonHum").innerHTML = weatherData.main.humidity;
-        document.getElementById("prestonWS").innerHTML = weatherData.wind.speed;
-        document.getElementById("prestonWD").innerHTML = weatherData.wind.deg;
-        document.getElementById("prestonWC").innerHTML = weatherData.main.temp;
+        document.getElementById("Weather0").innerHTML = weatherData.main.temp;
 
     }
 

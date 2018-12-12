@@ -8,66 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <!-- CSS media query on a link element -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <script>
-            
-            var apiURL = 'https://caceres-angel.github.io/assignments/final-project/scripts/data.json';
-
-            var templeRequest = new XMLHttpRequest();
-
-            templeRequest.open('GET', apiURL, true);
-
-            templeRequest.send();
-
-            templeRequest.onload =  function () {
-
-                var templeData = JSON.parse(templeRequest.responseText);
-
-                console.log(templeData);
-
-                for (var i = 0; i < templeData.temples.length; i++) {
-
-                    document.getElementById("Name"+i).innerHTML = templeData.temples[i].name;
-                    document.getElementById("Address"+i).innerHTML = templeData.temples[i].address;
-                    document.getElementById("Telephone"+i).innerHTML = templeData.temples[i].telephone;
-
-                    var templeServices = templeData.temples[i].services;
-                        for (var j = 0; j < templeServices.length; j++) {
-                        var listItem = document.createElement('li');
-                        listItem.textContent = templeServices[j];
-                        document.getElementById("Services"+i).appendChild(listItem);
-                        //myList.appendChild(listItem);
-                    }
-
-                    var templeHistory = templeData.temples[i].history;
-                        for (var j = 0; j < templeHistory.length; j++) {
-                        var listItem = document.createElement('li');
-                        listItem.textContent = templeHistory[j];
-                        document.getElementById("History"+i).appendChild(listItem);
-                        //myList.appendChild(listItem);
-                    }
-
-                    var templeOrdinances = templeData.temples[i].history;
-                        for (var j = 0; j < templeOrdinances.length; j++) {
-                        var listItem = document.createElement('li');
-                        listItem.textContent = templeOrdinances[j];
-                        document.getElementById("Ordinances"+i).appendChild(listItem);
-                        //myList.appendChild(listItem);
-                    }
-
-                    
-                    var templeClosures = templeData.temples[i].history;
-                        for (var j = 0; j < templeClosures.length; j++) {
-                        var listItem = document.createElement('li');
-                        listItem.textContent = templeClosures[j];
-                        document.getElementById("Closures"+i).appendChild(listItem);
-                        //myList.appendChild(listItem);
-                    }
-                    document.getElementById("Sessions"+i).innerHTML = templeData.temples[i].sessions;
-                }
-
-            }
-            </script>
-    
+        
     </head>
 <body>
 <header>
@@ -77,8 +18,8 @@
         <ul id="menulist" class="hide">
             <li class='menuitem'><a href="index.html">Home</a></li>
             <li class='menuitem current'><a href="about-us.html" >About Us</a></li>
-            <li class='menuitem'><a href="temples-and-acomodations.html">Temples & Hotels</a></li>
-            <li class='menuitem'><a href="gallery.html" >Gallery</a></li>
+            <li class='menuitem'><a href="temples.html">Temples & Hotels</a></li>
+            <li class='menuitem'><a href="accomodations.html" >Accommodations</a></li>
             <li class='menuitem'><a href="booking.html">Booking</a></li>
             <li class='menuitem'><a href="contact.html">Contact</a></li>
         </ul>
@@ -88,72 +29,84 @@
 <main>
 
 </main>
-<article>
-    <h2 id="Name0">Fresno - California</h2>
-    <p>Address: <span id="Address0"></span></p>
-    <p>Telephone: <span id="Telephone0"></span></p>
-    <p>Email <email>Click Here</email></p>
-    <p>Services: 
-    <span>
-        <ul id="Services0"></ul>
-    </span>
-    </p>
-    <p>History: <ul id="History0"></ul></p>
-    <p>Ordinances: <ul id="Ordinances0"></ul></p>
-    <p>Sessions: <span id="Sessions0"></span></p>
-    <p>Closures: <ul id="Closures0"></ul></p>
-    <p>Current Weather: <span id="Weather0"></span></p>
+<article class="templesBox">
+        <h2 id="Name0"></h2>
+        <img src="images/temple-fresno-california.jpg" alt="temple of fresno california">
+        <fieldset class="templeInfo">
+            <p>Address: <span id="Address0"></span></p>
+            <p>Telephone: <span id="Telephone0"></span></p>
+            <p>Email <email>Click Here</email></p>
+            <p>Services: 
+            <span>
+                <ul id="Services0"></ul>
+            </span>
+            </p>
+            <p>History: <ul id="History0"></ul></p>
+            <p>Ordinances: <ul id="Ordinances0"></ul></p>
+            <p>Sessions: <span id="Sessions0"></span></p>
+            <p>Closures: <ul id="Closures0"></ul></p>
+            <p>Current Weather: <span id="Weather0"></span>ºC</p>
+        </fieldset>
 </article>
 
-<article>
-    <h2 id="Name1">Fresno - California</h2>
-    <p>Address: <span id="Address1"></span></p>
-    <p>Telephone: <span id="Telephone1"></span></p>
-    <p>Email <email>Click Here</email></p>
-    <p>Services: 
-    <span>
-        <ul id="Services1"></ul>
-    </span>
-    </p>
-    <p>History: <ul id="History1"></ul></p>
-    <p>Ordinances: <ul id="Ordinances1"></ul></p>
-    <p>Sessions: <span id="Sessions1"></span></p>
-    <p>Closures: <ul id="Closures1"></ul></p>
-    <p>Current Weather: <span id="Weather1"></span></p>
+<article class="templesBox">
+    <h2 id="Name1"></h2>
+    <img src="images/temple-laie-hawaii.jpg" alt="temple of laie hawaii">
+    <fieldset class="templeInfo">
+        <p>Address: <span id="Address1"></span></p>
+        <p>Telephone: <span id="Telephone1"></span></p>
+        <p>Email <email>Click Here</email></p>
+        <p>Services: 
+        <span>
+            <ul id="Services1"></ul>
+        </span>
+        </p>
+        <p>History: <ul id="History1"></ul></p>
+        <p>Ordinances: <ul id="Ordinances1"></ul></p>
+        <p>Sessions: <span id="Sessions1"></span></p>
+        <p>Closures: <ul id="Closures1"></ul></p>
+        <p>Current Weather: <span id="Weather1"></span>ºC</p>
+    </fieldset>
 </article>
 
-<article>
-    <h2 id="Name2">Fresno - California</h2>
-    <p>Address: <span id="Address2"></span></p>
-    <p>Telephone: <span id="Telephone2"></span></p>
-    <p>Email <email>Click Here</email></p>
-    <p>Services: 
-    <span>
-        <ul id="Services2"></ul>
-    </span>
-    </p>
-    <p>History: <ul id="History2"></ul></p>
-    <p>Ordinances: <ul id="Ordinances2"></ul></p>
-    <p>Sessions: <span id="Sessions2"></span></p>
-    <p>Closures: <ul id="Closures2"></ul></p>
-    <p>Current Weather: <span id="Weather2"></span></p>
+<article class="templesBox">
+    <h2 id="Name2"></h2>
+    <img src="images/temple-anchorage-alaska.jpg" alt="temple of anchorage alaska">
+    <fieldset class="templeInfo">
+        <p>Address: <span id="Address2"></span></p>
+        <p>Telephone: <span id="Telephone2"></span></p>
+        <p>Email <email>Click Here</email></p>
+        <p>Services: 
+        <span>
+            <ul id="Services2"></ul>
+        </span>
+        </p>
+        <p>History: <ul id="History2"></ul></p>
+        <p>Ordinances: <ul id="Ordinances2"></ul></p>
+        <p>Sessions: <span id="Sessions2"></span></p>
+        <p>Closures: <ul id="Closures2"></ul></p>
+        <p>Current Weather: <span id="Weather2"></span>ºC</p>
+    </fieldset>
 </article>
 
-<article>
-    <h2 id="Name3">Fresno - California</h2>
-    <p>Address: <span id="Address3"></span></p>
-    <p>Telephone: <span id="Telephone3"></span></p>
-    <p>Email <email>Click Here</email></p>
-    <p>Services: 
-    <span>
-        <ul id="Services3"></ul>
-    </span>
-    </p>
-    <p>History: <ul id="History3"></ul></p>
-    <p>Ordinances: <ul id="Ordinances3"></ul></p>
-    <p>Sessions: <span id="Sessions3"></span></p>
-    <p>Closures: <ul id="Closures3"></ul></p>
-    <p>Current Weather: <span id="Weather3"></span></p>
+<article class="templesBox">
+    <h2 id="Name3"></h2>
+    <img src="images/temple-bern-switzerland.jpg" alt="temple of bern temple-bern-switzerland">
+    <fieldset class="templeInfo">
+        <p>Address: <span id="Address3"></span></p>
+        <p>Telephone: <span id="Telephone3"></span></p>
+        <p>Email <email>Click Here</email></p>
+        <p>Services: 
+        <span>
+            <ul id="Services3"></ul>
+        </span>
+        </p>
+        <p>History: <ul id="History3"></ul></p>
+        <p>Ordinances: <ul id="Ordinances3"></ul></p>
+        <p>Sessions: <span id="Sessions3"></span></p>
+        <p>Closures: <ul id="Closures3"></ul></p>
+        <p>Current Weather: <span id="Weather3"></span>ºC</p>
+    </fieldset>
 </article>
             
 
@@ -171,5 +124,10 @@
 </footer>
 
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/templeData.js"></script>
+<script src="scripts/weather-fresno.js"></script>
+<script src="scripts/weather-laie.js"></script>
+<script src="scripts/weather-anchorage.js"></script>
+<script src="scripts/weather-bern.js"></script>
 </body>
 </html>
