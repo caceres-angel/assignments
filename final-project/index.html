@@ -17,23 +17,30 @@
         <button onclick="toogleMenu()" class='hamburguer'>&#9776;</button>
         <ul id="menulist" class="hide">
             <li class='menuitem current'><a href="index.html">Home</a></li>
-            <li class='menuitem'><a href="about-us.html" >About Us</a></li>
-            <li class='menuitem'><a href="temples.html">Temples & Hotels</a></li>
-            <li class='menuitem'><a href="accomodations.html" >Accommodations</a></li>
+            <li class='menuitem'><a href="locations.html">Locations</a></li>
+            <li class='menuitem'><a href="services.html" >Services</a></li>
             <li class='menuitem'><a href="booking.html">Booking</a></li>
             <li class='menuitem'><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-
 <main>
-    <div class='slider'>
-        <img src="images/hero-slider-small.jpg" alt="Temple Slider">
-    </div>
-</main>
+    <div>
+            <img class="mySlides" srcset="images/hero-slider-2-small.jpg 480w, images/hero-slider-2-large.jpg 901w" sizes="(max-width: 900px) 280px,
+            (min-width: 901px) 440px, 800px" src="images/hero-slider-2-large.jpg" alt="main slider">
+            
+            <img class="mySlides" srcset="images/hero-slider-4-small.jpg 480w, images/hero-slider-4-large.jpg 901w" sizes="(max-width: 900px) 280px,
+            (min-width: 901px) 440px, 800px" src="images/hero-slider-5-large.jpg" alt="main slider">
+            
+            <img class="mySlides" srcset="images/hero-slider-5-small.jpg 480w, images/hero-slider-5-large.jpg 901w" sizes="(max-width: 900px) 280px,
+            (min-width: 901px) 440px, 800px" src="images/hero-slider-5-large.jpg" alt="main slider">
 
+    </div>
+    <label class="sliderBtn" onclick="plusDivs(-1)">&#10094;</label>
+    <label class="sliderBtn" onclick="plusDivs(1)">&#10095;</label>
+</main>      
 <section>
-    <form method="GET" action="thanks.html" >
+    <form method="GET" action="thanks.html" class="mainForm">
             <fieldset>
                 <legend><strong>Search Availability</strong></legend>
                 <label class="field">Arrival<input type="date" name="dateArrival"></label>
@@ -67,23 +74,24 @@
 </section>
 
 <article>
-    <h2>Who we are?</h2>
-    <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. <a href="about-us.html">Read More</a></p>
+    <h2>About Us</h2>
+    <p><strong>The Temple Inn & Suites </strong>is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. </p><br ><p> The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company. </p>
 </article>
 
 <footer>
-    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.8445639356505!2d-77.09719929374494!3d38.97840791617452!2m3!1f355.2187500000002!2f37.31635911955864!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+EE.+UU.!5e1!3m2!1ses-419!2sar!4v1544544081201" allowfullscreen></iframe></div>
-    <div>
+    <div class="footerBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.8445639356505!2d-77.09719929374494!3d38.97840791617452!2m3!1f355.2187500000002!2f37.31635911955864!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+EE.+UU.!5e1!3m2!1ses-419!2sar!4v1544544081201" allowfullscreen></iframe></div>
+    <div class="footerBox">
         <p><b>Temple Inn & Suites</b></p>
         <p>Maryland, USA</p>
         <p>Contact: +543874685059</p>
         <p>Email: info@templeinnandsuites.com</p>
     </div>        
-    <div>
+    <div  class="footerBox">
         <p>Copyright 2018. Designed by Angel Caceres. Student @ <a href="http://www.byui.edu" target="_blank">Bringham Young Unversity Idaho.</a></p>
     </div>
 </footer>
 
 <script src="scripts/hamburger.js"></script>
+<script src="scripts/slider.js"></script>
 </body>
 </html>

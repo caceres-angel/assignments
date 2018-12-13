@@ -3,8 +3,25 @@
     font-family: 'Lato', sans-serif;
     margin: 0; box-sizing: border-box;
 }
+.current{
+    padding: 1%;
+    background-color: #ec924a;
+}
+a:hover{
+    background-color:#1c5d99;
+    color:white;
+}
+.mySlides {
+    display:none;
+    width: 100%;
+}
+.sliderBtn{
+    margin-top: -150px;
+    font-size:200%;
 
-@media all and (min-width: 801px) {
+}
+
+@media all and (min-width: 901px) {
 
     .insideSlider{
         position: absolute;
@@ -27,12 +44,19 @@
     .hamburguer{
         color: #eff1f4;
     }
+
+    header  {
+        display:flex;
+        flex-direction: reverse;
+    }
+
     footer{
         background-color: #ec924a;
         margin: 2% 0% 2% 0%;
         padding: 15px;
     }
     nav {
+        width: 100%;
         margin: auto;
         padding: 15px;
         background-color: #325B61;
@@ -57,13 +81,11 @@
         display: none;
     }
 
-    p {
-        text-align: justify;
-    }
     article{
         background-color: #F2F2D9;
         padding: 3%;
         margin: 3% 0% 3% 0%;
+        text-align: justify;
     }
     .templeInfo{
         box-shadow: #1c5d99 4px 4px 0px 0px;
@@ -91,7 +113,7 @@
         width: 100%;
     }
     .logo img {
-        width: 80%;
+        width: 100%;
         padding: 1rem;
     }
     .clearfix::after {
@@ -99,21 +121,25 @@
         clear: both;
         display: table;
     }
+    form {
+        display: block;
+    }
     form fieldset {
         background-color: #ec924a;
         margin: 2rem 0;
         padding: .5rem 2%;
-        text-align:center;
+
     }
     form legend {
-        text-align: center;
+        text-align: left;
         color: gray;
         margin: 0 1rem;
         background-color:#F2F2D9;
         padding:10px;
     }
     form label.field{
-        display: inline-block;
+        display: block;
+        width:35%;
         padding-top: 1rem;
         color: white;
         font-size: 1rem;
@@ -126,22 +152,37 @@
         width: 100%;
     }
     form textarea {
-        display:inline-block;
-        width:15rem;
-        
+        width: 20rem;
+        height: 10rem;
     }
 
     form input.submit {
         background-color: #415A56;
         color: #ffffff;
         padding: 15px;
-        width:50%;
+        width:35%;
     }
     form label.field input:required{
         background-color: lightpink;
     }
     form label.field input:required:valid{
         background-color: lightgreen;
+    }
+
+    form .mainForm label.field{
+        display: inline-block;
+        width:35%;
+        padding-top: 1rem;
+        color: white;
+        font-size: 1rem;
+    }
+
+     .mainForm label.field{
+        display: inline-block;
+        width:20%;
+    }
+    .mainForm input.submit {
+        width:18%;
     }
 
     .templeServices {
@@ -205,13 +246,11 @@
         display: none;
     }
 
-    p {
-        text-align: justify;
-    }
     article{
         background-color: #F2F2D9;
         padding: 3%;
         margin: 3% 0% 3% 0%;
+        text-align: justify;
     }
     .templeInfo{
         box-shadow: #1c5d99 4px 4px 0px 0px;
@@ -239,7 +278,7 @@
         width: 100%;
     }
     .logo img {
-        width: 80%;
+        width: 50%;
         padding: 1rem;
     }
     .clearfix::after {
@@ -247,21 +286,25 @@
         clear: both;
         display: table;
     }
+    form {
+        display: block;
+    }
     form fieldset {
         background-color: #ec924a;
         margin: 2rem 0;
         padding: .5rem 2%;
-        text-align:center;
+
     }
     form legend {
-        text-align: center;
+        text-align: left;
         color: gray;
         margin: 0 1rem;
         background-color:#F2F2D9;
         padding:10px;
     }
     form label.field{
-        display: inline-block;
+        display: block;
+        width:35%;
         padding-top: 1rem;
         color: white;
         font-size: 1rem;
@@ -274,16 +317,15 @@
         width: 100%;
     }
     form textarea {
-        display:inline-block;
-        width:15rem;
-        
+        width: 20rem;
+        height: 10rem;
     }
 
     form input.submit {
         background-color: #415A56;
         color: #ffffff;
         padding: 15px;
-        width:100%;
+        width:35%;
     }
     form label.field input:required{
         background-color: lightpink;
@@ -445,4 +487,3 @@
         width: 100%;
     }
 }
-

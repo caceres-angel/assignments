@@ -16,11 +16,10 @@
     <nav class="clearfix">
         <button onclick="toogleMenu()" class='hamburguer'>&#9776;</button>
         <ul id="menulist" class="hide">
-            <li class='menuitem current'><a href="index.html">Home</a></li>
-            <li class='menuitem'><a href="about-us.html" >About Us</a></li>
-            <li class='menuitem'><a href="temples.html">Temples & Hotels</a></li>
-            <li class='menuitem'><a href="accomodations.html" >Accommodations</a></li>
-            <li class='menuitem'><a href="booking.html">Booking</a></li>
+            <li class='menuitem'><a href="index.html">Home</a></li>
+            <li class='menuitem'><a href="locations.html">Locations</a></li>
+            <li class='menuitem'><a href="services.html" >Services</a></li>
+            <li class='menuitem current'><a href="booking.html">Booking</a></li>
             <li class='menuitem'><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -35,6 +34,9 @@
     <form method="GET" action="thanks.html" >
             <fieldset>
                 <legend><strong>Search Availability</strong></legend>
+                <label class="field">Registrant's Full Name*<input type="text" name="fname" required></label>
+                <label class="field">Email*<input type="text" name="email" required></label>
+                <label class="field">State Address<input type="text" name="Address" required></label>
                 <label class="field">Arrival<input type="date" name="dateArrival"></label>
                 <label class="field">Departure<input type="date" name="dateDeparture"></label>
                 <label class="field">Temple Location
@@ -69,9 +71,6 @@
                                 <option value="Cuadruple"></option>
                         </datalist>
                 </label>
-                <label class="field">Registrant's Full Name*<input type="text" name="fname" required></label>
-                <label class="field">Email*<input type="text" name="email" required></label>
-                <label class="field">State Address<input type="text" name="Address" required></label>
                 <label class="field">Special Accommodations<br /><textarea name="comments"></textarea></label>
                 
                 <label class="submit"><input type="submit" name="submit" class="submit" value="Book!"></label>
