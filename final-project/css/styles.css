@@ -23,17 +23,20 @@ a:hover{
 
 @media all and (min-width: 901px) {
 
-    .insideSlider{
-        position: absolute;
-        padding:15px;
-        margin-top: -25%;
-        margin-bottom: 25%;
-        margin-left: 2%;
-        background-color: #eff1f4 ;
+    .sectionHome{
+        display:flex;
     }
 
+    .homeArticle1{
+        width:65%;
+    }
+    .homeArticle2{
+        background-color: #ec924a;
+        width:34%;
+        color: #ffffff;
+    }
     body {
-        margin: 1% 1% 1% 1%;
+        margin: 1% 7% 1% 7%;
     }
     header, footer {
         width: 100%;
@@ -47,7 +50,6 @@ a:hover{
 
     header  {
         display:flex;
-        flex-direction: reverse;
     }
 
     footer{
@@ -97,13 +99,14 @@ a:hover{
         width: 35%;
         float:left;
         padding:1%;
+        box-shadow: 3px 5px grey;
     }
     .templesBox .templeInfo {
         width: 65%;
     }
 
     h2{
-        padding: 3%;
+        padding: 2%;
         text-align: center;
     }
     article img{
@@ -145,7 +148,6 @@ a:hover{
         font-size: 1rem;
     }
     form label.field input, form label.field select, form textarea{
-        -webkit-appearance: none;
         display:block;
         font-size: 1rem;
         padding: .75rem;
@@ -262,6 +264,7 @@ a:hover{
         width: 35%;
         float:left;
         padding:1%;
+        box-shadow: 3px 5px grey;
     }
     .templesBox .templeInfo {
         width: 65%;
@@ -310,7 +313,6 @@ a:hover{
         font-size: 1rem;
     }
     form label.field input, form label.field select, form textarea{
-        -webkit-appearance: none;
         display:block;
         font-size: 1rem;
         padding: .75rem;
@@ -443,7 +445,6 @@ a:hover{
         font-size: 1rem;
     }
     form label.field input, form label.field select{
-        -webkit-appearance: none;
         display: block;
         font-size: 1rem;
         padding: .75rem;
