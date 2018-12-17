@@ -34,7 +34,7 @@ templeRequest.onload =  function () {
             //myList.appendChild(listItem);
         }
 
-        var templeOrdinances = templeData.temples[i].history;
+        var templeOrdinances = templeData.temples[i].ordinances;
             for (var j = 0; j < templeOrdinances.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = templeOrdinances[j];
@@ -43,7 +43,7 @@ templeRequest.onload =  function () {
         }
 
         
-        var templeClosures = templeData.temples[i].history;
+        var templeClosures = templeData.temples[i].closures;
             for (var j = 0; j < templeClosures.length; j++) {
             var listItem = document.createElement('li');
             listItem.textContent = templeClosures[j];
